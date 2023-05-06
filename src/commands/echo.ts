@@ -1,21 +1,15 @@
-import { Markup } from "telegraf";
-
+import { Message } from "typegram";
+import { isNumber } from "util";
 import bot from "../lib/bot";
-
-const keyboard = Markup.inlineKeyboard([
-  Markup.button.url("❤️", "http://telegraf.js.org"),
-  Markup.button.callback("Delete", "delete"),
-]);
 
 const echo = () => {
   try {
-    bot.on("message", (ctx) =>
-      ctx.telegram.sendCopy(
-        ctx.message.chat.id,
-        ctx.message,
-        keyboard,
-      ),
-    );
+    bot.on("message", (ctx) => {
+      const message = (ctx.message as Message.TextMessage).text;
+      const og_num = Number(message);
+      const sgd = og_num / 5.8;
+      ctx.reply(sgd.toString());
+    });
   } catch (error) {
     console.log(error);
   }
