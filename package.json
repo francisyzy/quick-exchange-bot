@@ -1,7 +1,7 @@
 {
-  "name": "telegraf-lambda-mysql-template",
+  "name": "quick-exchange-bot",
   "version": "0.1.1",
-  "description": "Template for creating future telegram bot apps",
+  "description": "Dividing all numbers by 5.8",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/index.js",
@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/francisyzy/telegraf-lambda-mysql-template.git"
+    "url": "git+https://github.com/francisyzy/quick-exchange-bot.git"
   },
   "author": "francisyzy",
   "bugs": {
-    "url": "https://github.com/francisyzy/telegraf-lambda-mysql-template/issues"
+    "url": "https://github.com/francisyzy/quick-exchange-bot/issues"
   },
-  "homepage": "https://github.com/francisyzy/telegraf-lambda-mysql-template#readme",
+  "homepage": "https://github.com/francisyzy/quick-exchange-bot#readme",
   "engines": {
     "node": "14.x"
   },
